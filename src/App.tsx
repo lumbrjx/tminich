@@ -89,11 +89,11 @@ function App() {
 
 	return (
 		<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', flexDirection: 'column' }}>
-			<div>
-				<h1>Tminich: talk to minoucha</h1>
+			<div style={{ display: 'flex', justifyContent: "center", alignItems: "center", width: "100%" }}>
+				<h2>Tminich: talk to minoucha</h2>
 			</div>
 
-			<div className="message-log-container" style={{ padding: '20px', width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column' }}>
+			<div className="message-log-container" style={{ width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column' }}>
 				<div
 					className="message-log"
 					style={{
@@ -138,7 +138,7 @@ function App() {
 				</div>
 
 				{/* Message input */}
-				<form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
+				<form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', paddingInline: "30px" }}>
 					<input
 						type="text"
 						value={message}
